@@ -1,0 +1,16 @@
+<div class="container">
+
+  <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm.value)">
+    <label>Min
+      <input type="text" name="min"  [ngModel]="min" required>
+    </label>
+    <label>Max
+      <input type="text" name="max"  [ngModel]="max" required>
+    </label>
+    <input type="submit" value="Submit">
+  </form>
+
+ <app-table-component [rows]="rowsToDisplay">
+ </app-table-component>
+
+</div>

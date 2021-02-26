@@ -1,0 +1,15 @@
+{{getLastClickedRowName()}}
+
+<table>
+  <thead>
+    <tr>
+      <th>Row number</th>
+      <th>Name</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr app-table-row-component *ngFor="let row of rows" [row]="row" (rowClicked)="onRowClicked($event)" >
+    </tr>
+  </tbody>
+</table>
